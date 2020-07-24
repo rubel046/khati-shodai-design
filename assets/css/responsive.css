@@ -18,11 +18,19 @@
 .content-page .table-centered td, .table-centered th {
     font-size: 13px;
 }
+/*Transction Seciton*/
+.transaction-body td,th,a{
+font-size:9px!important;
+}
 
 }
 @media screen and (min-width: 250px) and (max-width: 413px){
 	.left-side-menu-light .navbar-custom .topnav-menu .nav-link {
     padding: 1px!important;
     font-size: 7px!important;
+}
+/*Transction Seciton*/
+.transaction-body td,th,a{
+font-size:9px!important;
 }
 }

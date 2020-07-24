@@ -46,21 +46,6 @@
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="mdi mdi-account-outline"></i>
-                            <span>My Dashboard</span>
-                        </a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <i class="mdi mdi-account-outline"></i>
-                            <span>My Order</span>
-                        </a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <i class="mdi mdi-account-outline"></i>
-                            <span>Message Center</span>
-                        </a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <i class="mdi mdi-account-outline"></i>
                             <span>Wish List</span>
                         </a>
                         <!-- item-->
@@ -78,8 +63,6 @@
                             <i class="mdi mdi-account-outline"></i>
                             <span>Profile & Password</span>
                         </a>
-
-                        
 
                         <div class="dropdown-divider"></div>
 
@@ -123,7 +106,7 @@
                 <li>
                     <input type="text" class="form-control search rounded-pill" name="search" placeholder="Search Product">
                 </li>
-                <li><img src="assets/images/cart.png" class="cart-li" alt=""></li>
+                 <li><img src="assets/images/cart.png" class="cart-li" alt=""></li>
             </ul><!-- Header Middle End -->
 
         </div><!-- .navbar-custom end -->
@@ -175,117 +158,99 @@
                 <!-- Start Content-->
                 <div class="container-fluid">
 
-                    <div class="profile-password-section p-2">
-                        <span class="h4 mr-3">Manage Profile</span>
-                        <span class="h4">& Password</span>
-                        <div class="card mt-2">
-                            <div class="card-header">
-                                <h3>Basic Info</h3>
-                            </div>
-                            <div class="card-body">
-                                <form action="" method="post">
-                                    <div class="form-group row">
-                                        <div class="col-2">
-                                            <p>Your Name</p>
-                                        </div>
-                                        <div class="col-10">
-                                            <input type="text" class="form-control" name="name" placeholder="Your Name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-2">
-                                            <p>Your Email</p>
-                                        </div>
-                                        <div class="col-10">
-                                            <input type="email" class="form-control" name="email" placeholder="Your Email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-2">
-                                            <p>Phone Number</p>
-                                        </div>
-                                        <div class="col-10">
-                                            <input type="number" class="form-control" name="email" placeholder="Your Phone Number">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-2">
-                                            <p>Date Of Birth</p>
-                                        </div>
-                                        <div class="col-10">
-                                            <input type="date" class="form-control" name="date" >
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-2">
-                                            <p>Your Gender</p>
-                                        </div>
-                                        <div class="col-10">
-                                            <select name="" id="" class="form-control">
-                                                <option value="">Select Gender</option>
-                                                <option value="">Male</option>
-                                                <option value="">Female</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-2">
-                                            <p>Photo</p>
-                                        </div>
-                                        <div class="col-10">
-                                            <input type="File" class="form-control" name="photo">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-2">
-                                            <p>About Me</p>
-                                        </div>
-                                        <div class="col-10">
-                                            <textarea name="about_me" id="about_me" cols="30" rows="4" class="form-control"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2">
-                                            
-                                        </div>
-                                        <div class="col-10">
-                                            <input type="submit" class="btn btn-info" value="save">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div><!-- .card end -->
-                        <div class="card">
-                            <div class="card-body w-75 m-auto change-password">
-                                <form action="" method="post">
-                                    <p class="font-weight-bold">Change Your Password?</p>
-                                    <div class="form-group row">
-                                        <div class="col-4">
-                                            <p>Your Password</p>
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" class="form-control" name="password" placeholder="Your Password">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-4">
-                                            <p>Confirm Password</p>
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" class="form-control" name="password" placeholder="Confirm Password">
-                                        </div>
-                                    </div>
-                                    <input type="submit" class="btn btn-primary" value="Change Password">
-                                </form>
-                            </div>
-                        </div>
-                    </div><!-- .profile-password-section end -->
+                    <div class="transaction-section p-2">
+                        <h2 class="text-center mr-3">Transaction History</h2>
 
-                </div>
-                <!-- end container-fluid -->
+                        <div class="view-all-form">
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <label for="tran-id">Transcation Id</label>
+                                        <input type="text" id="tran-id" class="form-control">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="from-date">From Date</label>
+                                        <input type="date" id="-from-date" class="form-control">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="to-date">To Date</label>
+                                        <input type="date" id="tran-id" class="form-control">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="amount">Amount</label>
+                                        <input type="text" id="amount" class="form-control">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="method">Method</label>
+                                        <select name="method" id="method" class="form-control">
+                                            <option value="">Bikash</option>
+                                            <option value="">Rocket</option>
+                                            <option value="">Nagad</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2 mt-4">
+                                        <input type="submit" class="btn btn-success" value="Search">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="transaction-body card mt-5">
+                            <table class="table card-body table-striped overflow-auto" style="overflow-y: scroll!important;">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Trans. Id</th>
+                                        <th>Order Id</th>
+                                        <th>Amount</th>
+                                        <th>Date/Time</th>
+                                        <th>Payment Method</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>3433</td>
+                                        <td>1</td>
+                                        <td>343 Tk</td>
+                                        <td><p>12-2-2020</p><p>02-17-04pm</p></td>
+                                        <td>Bikash</td>
+                                        <td>Completed</td>
+                                        <td><a href="" class="btn btn-danger btn-sm">View Details</a></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>3433</td>
+                                        <td>1</td>
+                                        <td>343 Tk</td>
+                                        <td><p>12-2-2020</p><p>02-17-04pm</p></td>
+                                        <td>Bikash</td>
+                                        <td>Completed</td>
+                                        <td><a href="" class="btn btn-danger btn-sm">View Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3433</td>
+                                        <td>1</td>
+                                        <td>343 Tk</td>
+                                        <td><p>12-2-2020</p><p>02-17-04pm</p></td>
+                                        <td>Bikash</td>
+                                        <td>Completed</td>
+                                        <td><a href="" class="btn btn-danger btn-sm">View Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3433</td>
+                                        <td>1</td>
+                                        <td>343 Tk</td>
+                                        <td><p>12-2-2020</p><p>02-17-04pm</p></td>
+                                        <td>Bikash</td>
+                                        <td>Completed</td>
+                                        <td><a href="" class="btn btn-danger btn-sm">View Details</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- .transaction-body end -->
+                    </div><!-- .transaction-section end -->
+
+                </div><!-- end container-fluid -->
 
             </div>
             <!-- end content -->

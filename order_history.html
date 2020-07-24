@@ -106,7 +106,7 @@
                 <li>
                     <input type="text" class="form-control search rounded-pill" name="search" placeholder="Search Product">
                 </li>
-
+                <li><img src="assets/images/cart.png" class="cart-li" alt=""></li>
             </ul><!-- Header Middle End -->
 
         </div><!-- .navbar-custom end -->
@@ -126,15 +126,13 @@
                         <hr>
                         <ul class="metismenu" id="side-menu">
     
-                            <li class="menu-title">Navigation</li>
                             <a href="index.html" class="text-white d-block"><img src="assets/images/icon1.png" alt=""> Dashboard</a>
                             <a href="message.html" class="text-white d-block"><img src="assets/images/icon2.png" alt=""> Message</a>
                             <a href="order_history.html" class="text-white d-block"><img src="assets/images/icon1.png" alt=""> Order History</a>
                             <a href="transaction.html" class="text-white d-block"><img src="assets/images/icon2.png" alt=""> Transition History</a>
                             <a href="wishlist.html" class="text-white d-block"><img src="assets/images/icon1.png" alt=""> Wishlist</a>
-                            <a href="purchase.html" class="text-white d-block"><img src="assets/images/icon2.png" alt=""> Purchase Product</a>
                             <a href="profile.html" class="text-white d-block"><img src="assets/images/icon1.png" alt=""> Profile & Password</a>
-                            <a href="" class="text-white d-block"><img src="assets/images/icon2.png" alt=""> My Coupon</a>
+                            <a href="cupon.html" class="text-white d-block"><img src="assets/images/icon2.png" alt=""> My Coupon</a>
                             <a href="" class="text-white d-block"><img src="assets/images/icon1.png" alt=""> Support Ticket</a>
     
                         </ul>
@@ -164,42 +162,46 @@
                         <span class="h4 mr-3">Orders</span>
                         <div class="card mt-2">
                             <div class="card-body">
-                                <a href="">Awating Payment</a>
-                                <a href="">Awating Shipment</a>
-                                <a href="">Awating Delivery</a>
-                                <a href="">Disputs</a>
-                                <a href="">Unread Order Message</a>
+                                <a href="">Awating Payment <span>(10)</span></a>
+                                <a href="">Awating Shipment <span>(10)</span></a>
+                                <a href="">Awating Delivery <span>(10)</span></a>
+                                <a href="">Disputs <span>(10)</span></a>
+                                <a href="">Unread Order Message <span>(10)</span></a>
                             </div>
                             
                         </div>
                         <div class="card">
                             <div class="card-body">
                                 <form action="" method="post">
-                                <div class="row">
-                                    <div class="col-12 col-lg-4">
-                                        <span>Order Number</span>
-                                        <span><input type="text" class="form-control"></span>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <div class="row">
-                                            <div class="col-8">
-                                                <span>Product</span>
-                                                <span><input type="text" class="form-control"></span>
-                                            </div>
-                                            <div class="col-4">
-                                                <input type="submit" class="mt-4 btn btn-warning">
-                                            </div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <label for="tran-id">Order Id</label>
+                                            <input type="text" id="tran-id" class="form-control">
+                                        </div>
+                                        <div class="col-2">
+                                            <label for="from-date">From Date</label>
+                                            <input type="date" id="-from-date" class="form-control">
+                                        </div>
+                                        <div class="col-2">
+                                            <label for="to-date">To Date</label>
+                                            <input type="date" id="tran-id" class="form-control">
+                                        </div>
+                                        <div class="col-2">
+                                            <label for="amount">Amount</label>
+                                            <input type="text" id="amount" class="form-control">
+                                        </div>
+                                        <div class="col-2">
+                                            <label for="method">Status</label>
+                                            <select name="method" id="method" class="form-control">
+                                                <option value="">All</option>
+                                                <option value="">Completed</option>
+                                                <option value="">Processing</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-2 mt-4">
+                                            <input type="submit" class="btn btn-success" value="Search">
                                         </div>
                                     </div>
-                                    <div class="col-12 col-lg-2">
-                                        <select name="" id="" class="form-control mt-4">
-                                            <option value="">More Filter</option>
-                                            <option value="">More Filter</option>
-                                            <option value="">More Filter</option>
-                                            <option value="">More Filter</option>
-                                        </select>
-                                    </div>
-                                </div>
                                 </form>
                             </div><!-- .card-body end -->
                         </div><!-- .card-end -->
@@ -209,30 +211,46 @@
                                     <table class="table table-striped">
                                         <thead class="bg-light">
                                             <tr>
-                                                <th>Product</th>
-                                                <th>Product Action</th>
-                                                <th>Order Status</th>
-                                                <th>Order Action</th>
+                                                <th>Order Id</th>
+                                                <th>Date/Time</th>
+                                                <th>Price</th>
+                                                <th>Status</th>
+                                                <th>Ship To</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Lorem Ipsum</td>
-                                                <td>Lorem Ipsum</td>
-                                                <td>Lorem Ipsum</td>
-                                                <td>Lorem Ipsum</td>
+                                                <td>Wdk344</td>
+                                                <td><p>12-3-2020</p><p>02.3.4pm</p></td>
+                                                <td>444</td>
+                                                <td>In Process</td>
+                                                <td>Motijhil, 4432, Dhaka</td>
+                                                <td><a href="" class="btn btn-danger btn-sm">view details</a></td>
                                             </tr>
                                             <tr>
-                                                <td>Lorem Ipsum</td>
-                                                <td>Lorem Ipsum</td>
-                                                <td>Lorem Ipsum</td>
-                                                <td>Lorem Ipsum</td>
+                                                <td>Wdk344</td>
+                                                <td><p>12-3-2020</p><p>02.3.4pm</p></td>
+                                                <td>444</td>
+                                                <td>In Process</td>
+                                                <td>Motijhil, 4432, Dhaka</td>
+                                                <td><a href="" class="btn btn-danger btn-sm">view details</a></td>
                                             </tr>
                                             <tr>
-                                                <td>Lorem Ipsum</td>
-                                                <td>Lorem Ipsum</td>
-                                                <td>Lorem Ipsum</td>
-                                                <td>Lorem Ipsum</td>
+                                                <td>Wdk344</td>
+                                                <td><p>12-3-2020</p><p>02.3.4pm</p></td>
+                                                <td>444</td>
+                                                <td>In Process</td>
+                                                <td>Motijhil, 4432, Dhaka</td>
+                                                <td><a href="" class="btn btn-danger btn-sm">view details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Wdk344</td>
+                                                <td><p>12-3-2020</p><p>02.3.4pm</p></td>
+                                                <td>444</td>
+                                                <td>In Process</td>
+                                                <td>Motijhil, 4432, Dhaka</td>
+                                                <td><a href="" class="btn btn-danger btn-sm">view details</a></td>
                                             </tr>
                                         </tbody>
                                     </table>
